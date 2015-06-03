@@ -14,14 +14,15 @@ version 0.0100
 
 # DESCRIPTION
 
-MooseX::Modern provides the best practices of Moose in a single, user-friendly import.
+MooseX::Modern provides the best practices of [Moose](https://metacpan.org/pod/Moose) in a single, user-friendly import.
 
 The following modules will be automatically loaded into your class:
 
-- [Moose](https://metacpan.org/pod/Moose)
-=item [MooseX::AttributeShortcuts](https://metacpan.org/pod/MooseX::AttributeShortcuts)
-=item [MooseX::Types](https://metacpan.org/pod/MooseX::Types)
-=item [namespace::autoclean](https://metacpan.org/pod/namespace::autoclean)
+- [Moose](https://metacpan.org/pod/Moose): Postmodern object system
+=item [Moose::Util::TypeConstraints](https://metacpan.org/pod/Moose::Util::TypeConstraints): Type constraint system
+=item [MooseX::AttributeShortcuts](https://metacpan.org/pod/MooseX::AttributeShortcuts): Shorthand for common attribute options
+=item [MooseX::HasDefaults::RO](https://metacpan.org/pod/MooseX::HasDefaults::RO): Default to read-only attributes
+=item [namespace::autoclean](https://metacpan.org/pod/namespace::autoclean): Clean imports in class namespace
 
 # BUGS
 

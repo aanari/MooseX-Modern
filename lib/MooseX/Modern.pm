@@ -1,10 +1,27 @@
 package MooseX::Modern;
-use Moose;
-use MooseX::AttributeShortcuts;
-use MooseX::Types;
-use namespace::autoclean;
 
-our $VERSION = '0.0100';
+use Moose                         ();
+use Moose::Exporter;
+use Moose::Util::TypeConstraints  ();
+use MooseX::AttributeShortcuts    ();
+use MooseX::HasDefaults::RO       ();
+
+use namespace::autoclean          ();
+
+Moose::Exporter->setup_import_methods(also => ['Moose']);
+
+sub init_meta {
+    my $class  = shift;
+    my %params = @_;
+    my $for_class = $params{for_class};
+
+    Moose->init_meta(@_);
+    Moose::Util::TypeConstraints->import({ into => $for_class });
+    MooseX::AttributeShortcuts->init_meta(@_);
+    MooseX::HasDefaults::RO->import({ into => $for_class });
+
+    namespace::autoclean->import( -cleanee => $for_class );
+}
 
 1;
 
@@ -16,15 +33,16 @@ our $VERSION = '0.0100';
 
 =head1 DESCRIPTION
 
-MooseX::Modern provides the best practices of Moose in a single, user-friendly import.
+MooseX::Modern provides the best practices of L<Moose> in a single, user-friendly import.
 
 The following modules will be automatically loaded into your class:
 
 =over
 
-=item L<Moose>
-=item L<MooseX::AttributeShortcuts>
-=item L<MooseX::Types>
-=item L<namespace::autoclean>
+=item L<Moose>: Postmodern object system
+=item L<Moose::Util::TypeConstraints>: Type constraint system
+=item L<MooseX::AttributeShortcuts>: Shorthand for common attribute options
+=item L<MooseX::HasDefaults::RO>: Default to read-only attributes
+=item L<namespace::autoclean>: Clean imports in class namespace
 
 =back

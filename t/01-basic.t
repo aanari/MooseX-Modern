@@ -4,8 +4,9 @@ use Module::Loaded;
 
 for (qw/
     Moose
+    Moose::Util::TypeConstraints
     MooseX::AttributeShortcuts
-    MooseX::Types
+    MooseX::HasDefaults::RO
     namespace::autoclean
 /) {
     ok is_loaded($_), "Module $_ was loaded successfully";
