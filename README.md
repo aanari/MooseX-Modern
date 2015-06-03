@@ -18,11 +18,11 @@ MooseX::Modern provides the best practices of [Moose](https://metacpan.org/pod/M
 
 The following modules will be automatically loaded into your class:
 
-- [Moose](https://metacpan.org/pod/Moose): Postmodern object system
-- [Moose::Util::TypeConstraints](https://metacpan.org/pod/Moose::Util::TypeConstraints): Type constraint system
-- [MooseX::AttributeShortcuts](https://metacpan.org/pod/MooseX::AttributeShortcuts): Shorthand for common attribute options
-- [MooseX::HasDefaults::RO](https://metacpan.org/pod/MooseX::HasDefaults::RO): Default to read-only attributes
-- [namespace::autoclean](https://metacpan.org/pod/namespace::autoclean): Clean imports in class namespace
+- [Moose](https://metacpan.org/pod/Moose) – Postmodern object system
+- [Moose::Util::TypeConstraints](https://metacpan.org/pod/Moose::Util::TypeConstraints) – Type constraint system
+- [MooseX::AttributeShortcuts](https://metacpan.org/pod/MooseX::AttributeShortcuts) – Shorthand for common attribute options
+- [MooseX::HasDefaults::RO](https://metacpan.org/pod/MooseX::HasDefaults::RO) – Default to read-only attributes
+- [namespace::autoclean](https://metacpan.org/pod/namespace::autoclean) – Clean imports in class namespace
 
 # BUGS
 

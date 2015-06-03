@@ -39,14 +39,14 @@ The following modules will be automatically loaded into your class:
 
 =over
 
-=item L<Moose>: Postmodern object system
+=item L<Moose> – Postmodern object system
 
-=item L<Moose::Util::TypeConstraints>: Type constraint system
+=item L<Moose::Util::TypeConstraints> – Type constraint system
 
-=item L<MooseX::AttributeShortcuts>: Shorthand for common attribute options
+=item L<MooseX::AttributeShortcuts> – Shorthand for common attribute options
 
-=item L<MooseX::HasDefaults::RO>: Default to read-only attributes
+=item L<MooseX::HasDefaults::RO> – Default to read-only attributes
 
-=item L<namespace::autoclean>: Clean imports in class namespace
+=item L<namespace::autoclean> – Clean imports in class namespace
 
 =back
