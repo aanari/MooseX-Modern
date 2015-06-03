@@ -6,6 +6,23 @@ MooseX::Modern
 
 version 0.0100
 
+# SYNOPSIS
+
+    use MooseX::Modern;
+
+    # Your class here
+
+# DESCRIPTION
+
+MooseX::Modern provides the best practices of Moose in a single, user-friendly import.
+
+The following modules will be automatically loaded into your class:
+
+- [Moose](https://metacpan.org/pod/Moose)
+=item [MooseX::AttributeShortcuts](https://metacpan.org/pod/MooseX::AttributeShortcuts)
+=item [MooseX::Types](https://metacpan.org/pod/MooseX::Types)
+=item [namespace::autoclean](https://metacpan.org/pod/namespace::autoclean)
+
 # BUGS
 
 Please report any bugs or feature requests on the bugtracker website
