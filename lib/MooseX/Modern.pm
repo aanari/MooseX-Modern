@@ -25,6 +25,8 @@ sub init_meta {
 
 1;
 
+# ABSTRACT: Precision classes for Modern Perl
+
 =head1 SYNOPSIS
 
     use MooseX::Modern;

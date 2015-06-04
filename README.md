@@ -1,10 +1,10 @@
 # NAME
 
-MooseX::Modern
+MooseX::Modern - Precision classes for Modern Perl
 
 # VERSION
 
-version 0.0100
+version 0.0101
 
 # SYNOPSIS
 
