@@ -1,5 +1,6 @@
 requires "Moose" => "0";
 requires "Moose::Exporter" => "0";
+requires "Moose::Role" => "0";
 requires "Moose::Util::TypeConstraints" => "0";
 requires "MooseX::AttributeShortcuts" => "0";
 requires "MooseX::HasDefaults::RO" => "0";

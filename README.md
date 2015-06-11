@@ -4,7 +4,7 @@ MooseX::Modern - Precision classes for Modern Perl
 
 # VERSION
 
-version 0.0101
+version 0.0200
 
 # SYNOPSIS
 
